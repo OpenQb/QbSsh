@@ -1,0 +1,14 @@
+/**************************************************************************************************
+ * Project         : QbSsh
+ * Version         : 1.0.0
+ * Objective       : Simple SSH client
+ *
+ *
+ * Developer       : kawser <mkawserm@outlook.com>
+ * Developer git   : http://github.com/mkawserm
+ * Date            : 23-05-2017
+ * Copyright       : 2017 kawser.org
+ *************************************************************************************************/
+
+
+#include "private/qbssh_p.h"

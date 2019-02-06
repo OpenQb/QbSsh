@@ -1,0 +1,3 @@
+module Qb.Ssh
+plugin QbSsh
+typeinfo QbSsh.qmltypes
