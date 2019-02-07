@@ -4,6 +4,7 @@ QT += qml quick core
 QT += widgets
 
 CONFIG += plugin c++11
+CONFIG -= android_install
 
 INCLUDEPATH += $$PWD
 
