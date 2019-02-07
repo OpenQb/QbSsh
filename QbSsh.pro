@@ -1,7 +1,7 @@
 TEMPLATE = lib
 TARGET = QbSsh
 QT += qml quick core
-QT += widgets
+QT += widgets gui
 
 CONFIG += plugin c++11
 CONFIG -= android_install
@@ -12,7 +12,9 @@ INCLUDEPATH += $$PWD
 TARGET = $$qtLibraryTarget($$TARGET)
 uri = Qb.Ssh
 
-
+DEFINES+=QSSH_LIBRARY
+DEFINES+=BOTAN_LIBRARY
+msvc*: DEFINES += _CRT_SECURE_NO_WARNINGS
 
 include(QbSsh.pri)
 
