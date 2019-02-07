@@ -30,12 +30,10 @@ qmltypes.commands = qmlplugindump -nonrelocatable Qb.Ssh 1.0 > $$PWD/QbSsh.qmlty
 QMAKE_EXTRA_TARGETS += qmltypes
 
 qmldir.files = qmldir QbSsh.qmltypes
-unix {
-    installPath = $$[QT_INSTALL_QML]/$$replace(uri, \\., /)
-    qmldir.path = $$installPath
-    target.path = $$installPath
-    INSTALLS += target qmldir
-}
+installPath = $$[QT_INSTALL_QML]/$$replace(uri, \\., /)
+qmldir.path = $$installPath
+target.path = $$installPath
+INSTALLS += target qmldir
 
 HEADERS += \
     qbssh_plugin.h
